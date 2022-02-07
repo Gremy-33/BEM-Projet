@@ -1,0 +1,49 @@
+aside {
+  flex: 1 0 5%;
+  border: 1px solid turquoise;
+  margin: 0 8px;
+  font-size: 14px;
+  .nav_title {
+    gap: 32px;
+    margin: 24px 24px 40px 24px;
+    border-bottom: 1px solid turquoise;
+    li {
+      gap: 8px 0;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+      }
+    }
+    .nav_elements {
+      li {
+        a {
+          color: turquoise;
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+  label{
+      align-items: center;
+      flex-direction: row;
+      padding: 0 40px 16px;
+    input{
+        height: 16px; 
+        width: 16px;
+        align-items: center;
+        position: absolute;
+    }
+    span{
+        align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 46em) {
+  aside{
+    height: calc(100vh - 3em);
+    position: sticky;
+    top: 1.5em;
+    overflow: auto hidden;    
+  }
+}

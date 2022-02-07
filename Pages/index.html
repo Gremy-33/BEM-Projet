@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Pages/Styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <title>BEM cheat sheet</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+          <h1>
+            <span>BEM</span>
+            <span>CHEAT SHEET</span>
+          </h1>
+      </div>  
+    </header>
+    <div class="intro">
+        <p>
+        When it comes to finding the right class name, it can quickly drive
+        you to despair. Even the most experienced CSS developers don't always
+        find the right class name right away. This tool aims to help you to
+        not get lost in the BEM cosmos by giving you naming-suggestions for
+        some of the most common web components.
+        </p>
+        <p>
+        If you still have no idea what
+        BEM means, we have added some helpful links below. For questions or
+        suggestions for improvement, find me on Twitter. And last but not
+        least…if you like the little Astronaut, we made some Wallpapers.    
+        </p>    
+      </div>
+    <main>  
+      <aside>
+        <nav class="nav_block">
+            <ul class="nav_title">
+                <li>
+                <a href="#">Standard Blocks</a>
+                    <ul class="nav_elements">
+                        <li>
+                            <a href="#">Breadcrumb</a>
+                        </li>
+                        <li>
+                            <a href="#">Button</a>
+                        </li>
+                        <li>
+                            <a href="#">Card I</a>
+                        </li>
+                        <li>
+                            <a href="#">Card II</a>
+                        </li>
+                        <li>
+                            <a href="#">List</a>
+                        </li>
+                        <li>
+                            <a href="#">Navigation</a>
+                        </li>
+                        <li>
+                            <a href="#">Tabs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                <a href="#">Form Blocks</a>
+                    <ul class="nav_elements">
+                        <li>
+                            <a href="#">Checkbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Custom Checkbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Input Group</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                <a href="#">Layout Blocks</a>
+                    <ul class="nav_elements">
+                        <li>
+                            <a href="#">Imposter</a>
+                        </li>
+                        <li>
+                            <a href="#">Sidebar</a>
+                        </li>
+                        <li>
+                            <a href="#">Stack</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                <a href="#">Further Reading</a>
+                </li>
+            </ul>
+            <label for="show-html" class=show>
+                <input class="Checkbox">
+                <span>Show HTML</span>
+                </input>
+            </label>
+        </nav>
+    </aside>
+    <section class="text_block">
+        <article class="block_intro">
+            <h2>STANDARD BLOCKS</h2>
+            <span>In this section you will find elements that can be found on many websites and web applications. In general, it is advisable to consider whether a class name can be derived from the semantic HTML. For example
+                <a href="#">card__header</a>,
+                <a href="#">card__footer</a> or
+                <a href="#">list__item</a>.
+            </span>
+        </article>
+        <article class="breadcrumb__box" data-name="breadcrumb_box">
+            <div class="title_top" data-name="title_top">
+            <h3>BREADCRUMB</h3>
+            <i class="fas fa-sort-up"></i>
+            </div>
+            <div class="rubrique" data-name="rubrique">
+                <div class="breadcrumb" data-name="breadcrumb">
+                    <div class="breadcrumb__list" data-name="breadcrumb__list">
+                        <div class="breadcrumb__item" data-name="breadcrumb__item">
+                            <div class="breadcrumb__link" data-name="breadcrumb__link">
+                                <span>Home</span>
+                            </div>
+                        </div>
+                        <div class="breadcrumb__item" data-name="breadcrumb__item">
+                            <div class="breadcrumb__link" data-name="breadcrumb__link">
+                                <span>About</span>                       
+                            </div>
+                        </div>
+                        <div class="breadcrumb__item" data-name="breadcrumb__item">
+                            <div class="breadcrumb__link" data-name="breadcrumb__link">
+                                <span>Vision</span>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="note">
+                    <div class="top"></div>
+                    <div class="text">
+                        <p>
+                            NOTE : Don't use something like Breadcrumb Navigation for the aria-label as this would result in a screenreader announcing navigation twice.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="button__box" data-name="button__box">
+            <div class="title_top" data-name="title_top">
+            <h3>BUTTON</h3>
+            <i class="fas fa-sort-up"></i>
+            </div>
+            <div class="rubrique" data-name="rubrique">
+                <div class="button" data-name="button">
+                    <div class="button__prepend" data-name="button__prepend">
+                        <span>🚀</span>
+                    </div>
+                    <div class="button__body" data-name="button__body">
+                        <span>My button</span>                       
+                    </div>
+                    <div class="button__append" data-name="button__append">
+                        <span>👨‍🚀</span>                        
+                    </div>
+                </div>               
+                <div class="note">
+                    <div class="top"></div>
+                    <div class="text">
+                        <p>
+                            NOTE: This Button is more a link than a button. If you have a button in a form that is not a link, you should use a <br> <button> </br> element instead. Also note that most of the time you don't need an extra button__body element.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="card__box" data-name="card__box">
+            <div class="title_top" data-name="title_top">
+            <h3>CARD I</h3>
+            <i class="fas fa-sort-up"></i>    
+            </div>
+            <div class="rubrique" data-name="rubrique">
+                <div class="card" data-name="card">
+                    <div class="card__aside" data-name="card__aside">
+                        <div class="card__figure" data-name="card__figure">
+                            <div class="card__image" data-name="card__image">
+                                <span>Home</span>
+                            </div>
+                        </div>
+                    <div class="card__header" data-name="card__header">
+                        <div class="card__title" data-name="card__title">
+                            <h2>Card Title</h2>                            
+                        </div>
+                        <div class="card__subtitle" data-name="card__subtitle">
+                            <h3>Card Subtitle</h3>
+                        </div>    
+                    </div>
+                    <div class="card__body" data-name="card__body">
+                        <div class="card__copy" data-name="card__body">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint perspiciatis
+                                deleniti ab possimus ut? Ducimus fugiat hic velit necessitatibus. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Repellendus sapiente harum soluta excepturi ut
+                                temporibus, at amet corporis id asperiores.
+                            </p>                        
+                        </div>
+                    </div>
+                    <div class="card__footer" data-name="card__footer">
+                        <div class="card__actions" data-name="card__actions">
+                            <div class="button" data-name="button">
+                            <span>Button</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </article>        
+    </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="contain">
+                <div>
+                    <span>
+                        We're open for business
+                    </span>
+                    <span>
+                     X   9ELEMENTS
+                    </span>
+                </div>
+            </div>
+            <div class="license">
+                Made with
+                <span>💜</span>
+                in Bochum |
+                <a href="#">Imprint</a>
+                |
+                <a href="#">Data Privacy</a>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

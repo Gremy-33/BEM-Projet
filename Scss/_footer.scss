@@ -1,0 +1,25 @@
+.container{
+    background-image: url(../Images/moon-surface.svg);
+    background-size: 1400px 250px;
+    text-align: center;
+    justify-content: flex-end;
+    height: 500px;
+    .contain{
+        display: block;
+        border: 2px solid turquoise;
+    }
+    .license{
+        text-align: center;
+        display: inline-block;
+        color: rgb(218,237,233);
+        background: rgb(2,23,27);
+        font-size: 16px;
+        span, a{
+            display: inline-block;
+        }
+        a{
+            color: turquoise;
+            text-decoration: none;
+        }
+    }
+}

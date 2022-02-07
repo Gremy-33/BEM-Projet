@@ -1,0 +1,125 @@
+@mixin light_text {
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #7ed4d4;
+  color: white;
+}
+
+.text_block {
+  display: block;
+  padding: 24px 24px;
+  flex: 1 0 60%;
+  .block_intro {
+    width: 75%;
+    margin-bottom: 60px;
+    h2 {
+      padding-bottom: 24px;
+      @include light_text;
+    }
+    a {
+      display: contents;
+    }
+  }
+  .breadcrumb__box {
+    margin-bottom: 60px;
+    h3 {
+      padding-bottom: 24px;
+      @include light_text;
+    }
+    .rubrique {
+      flex-direction: row;
+      gap: 32px;
+      .breadcrumb {
+        background: black;
+        flex: 1 50%;
+        border-radius: 8px;
+        .breadcrumb__list {
+          flex-direction: row;
+        }
+      }
+      .note {
+        flex: 1 0 20%;
+        padding: 12px 8px;
+        .top {
+          background: #bdb885;
+          flex: none;
+          height: 24px;
+        }
+        .text {
+          background: #dfd29c;
+          color: #533f2d;
+          flex: none;
+          p {
+            padding: 8px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .button__box {
+    margin-bottom: 60px;
+    h3 {
+      padding-bottom: 24px;
+      @include light_text;
+    }
+    .rubrique {
+      flex-direction: row;
+      gap: 32px;
+      .button {
+        background: black;
+        flex: 1 50%;
+        border-radius: 8px;
+        flex-direction: row;
+        .button__prepend {
+          span {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .button__body {
+          span {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .button__append {
+          span {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .note {
+        flex: 1 0 20%;
+        padding: 12px 8px;
+        .top {
+          background: #bdb885;
+          flex: none;
+          height: 24px;
+        }
+        .text {
+          background: #dfd29c;
+          color: #533f2d;
+          flex: none;
+          p {
+            padding: 8px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .card__box {
+    h3{
+        padding-bottom: 24px;
+        @include light_text;
+    }
+    .card {
+        flex: 1 50%;
+        max-width: 630px;
+        background: black;
+        border-radius: 8px;
+        font-size: 16px;
+          }
+        }
+      }
